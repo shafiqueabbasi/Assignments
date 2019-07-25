@@ -1,0 +1,72 @@
+body{
+font-family: 'Numans', sans-serif;
+background-color: #1d4354;
+}
+.logo2{
+	width: 56%;
+	height: 58%;
+	margin-top: 8%;
+}
+.head3{
+	float: right;
+	margin-top: 2.5%;
+}
+.menu-link{
+	color: #37A000 !important;
+}
+
+.sign-body{
+	background-color: white;
+	height: 310px;
+	margin-top: 2%;
+}
+.acont{
+	margin-top: 6%;
+}
+.lux{
+	height: 40px;
+    padding-left: 2%;
+    margin-right: 5.5%;
+    margin-left: 5%;
+    border: 1px solid rgba(0,0,0,0.2);
+    /*box-shadow: inset 0px 0px 4px rgba(0,0,0,0.3);*/
+}
+
+.lux1{
+	height: 40px;
+    padding-left: 2%;
+    border: 1px solid rgba(0,0,0,0.2);
+    /*box-shadow: inset 0px 0px 4px rgba(0,0,0,0.3);*/
+}
+.lux2{
+	width: 89%;
+	height: 40px;
+    padding-left: 2%;
+    margin-left: 5%;
+    border: 1px solid rgba(0,0,0,0.2);
+    /*box-shadow: inset 0px 0px 4px rgba(0,0,0,0.3);*/
+}
+.signUp-body{
+	text-align: center;
+}
+.signUp-btn{
+	width: 30%;
+    height: 41px;
+    background-color: #37A000;
+    border: none;
+    border-radius: 2px;
+}
+.lux3{
+	text-decoration: none !important;
+    color: white !important;
+}
+.footer{
+    text-align: center;
+    background-color: #222222;
+}
+.foot-p{
+    color: white;
+}
+.foot-link{
+    color: #666 !important;
+}
