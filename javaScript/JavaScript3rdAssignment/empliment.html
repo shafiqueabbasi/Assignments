@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>js</title>
+</head>
+<body>
+
+  <div id="myHTMLWrapper"></div>
+    <button onclick="start()">Click here</button>
+    <button onclick="nextQuestion()">Click here</button>
+
+
+
+  <script type="text/javascript">
+
+    var userName = "";
+    var eachQuestion = "";
+    var wrapper = document.getElementById('myHTMLWrapper');
+    var nextOne = 0;
+    var allQuestion =[
+      {question: "Q.6: When did Pakistan win Olympic gold medal in Hockey for the first time?", option:["1948", "1952", "1960", "1964"]},
+      {question: "Q.7: Which party was in power in North West Frontier Province at the time of independence?", option: ["Muslim League","Congress", "Justice Party", "Communist Party"]},
+      {question: "Q.8: When Sindh was annexed by the British what message was sent by Charles Napier to headquaters?", option: ["The die is cast", "Peccavi", "Do or die", "In hoc signo vinces"]},
+      {question: "Q.9: Where was General Pervez Musharraf born?", option: ["Lahore", "Karachi", "Delhi", "Quetta"]},
+      {question: "Q.10: Where is the tomb of Mughal Emperor Jahangir?", option: ["Delhi", "Agra", "Lahore", "Karachi"]}
+    ]
+
+    function start(){
+      userName = prompt("Enter Your Name")
+    }
+
+    function nextQuestion(){
+      console.log(nextOne, 'next')
+      nextOne += 1;
+      oneByOne()
+    }
+
+    function oneByOne(){
+      for (var i = 0; i < allQuestion.length; i++) {
+        console.log(i, nextOne)
+        if (nextOne == i) {
+          console.log(i, nextOne, "what heppend nxt")
+          eachQuestion = '<h4>' + allQuestion[i].question + '</h4>' +
+          '<ul>' +
+              '<li>a ) <input type="radio" name="LastName" value="Mickey">' + allQuestions[i].options[0] + '</li><br>' +
+              '<li>b ) <input type="radio" name="LastName" value="Mickey">' + allQuestions[i].options[1] + '</li><br>' +
+              '<li>c ) <input type="radio" name="LastName" value="Mickey">' + allQuestions[i].options[2] + '</li><br>' +
+              '<li>d ) <input type="radio" name="LastName" value="Mickey">' + allQuestions[i].options[3] + '</li><br>' +
+              'Correct Answer: Muslim League' +
+            '</ul><br>'
+
+        }
+      }
+      wrapper.innerHTML = eachQuestion
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+<head>
+   <title>Quiz</title>
+</head>
+<body>
+   <h1 align="center">Quiz Application</h1>
+   <form align="center" name="myform">
+       Q1.What does HTML stands for?</br>
+       <input type="radio" name="Q1" value="a">Hyper text markup language</br>
+       <input type="radio" name="Q1" value="b">Hotmail</br></br>
+       Q2.What does Css stands for?</br>
+       <input type="radio" name="Q2" value="a">Colorful style sheet</br>
+       <input type="radio" name="Q2" value="b">Cascading style sheet</br></br>
+       Q3.What does WWW stands for</br>
+       <input type="radio" name="Q3" value="a">World wide web</br>
+       <input type="radio" name="Q3" value="b">world word web</br></br>
+       Q4.Which of the following is a presentation program?</br>
+       <input type="radio" name="Q4" value="a">MS.Power Point</br>
+       <input type="radio" name="Q4" value="b">MS.Excel</br></br>
+       Q5.Which one of the following is the programming language?</br>
+       <input type="radio" name="Q5" value="a">HTML</br>
+       <input type="radio" name="Q5" value="b">HTTP</br></br>
+       Q6.Which short cut key is used for copt text?</br>
+       <input type="radio" name="Q6" value="a">ctrl + v</br>
+       <input type="radio" name="Q6" value="b">ctrl + c</br></br>
+       Q7.How many funtion keys in a Keyboard?</br>
+       <input type="radio" name="Q7" value="a">12</br>
+       <input type="radio" name="Q7" value="b">14</br></br>
+       Q8.The main page of a web site is known as?</br>
+       <input type="radio" name="Q8" value="a">Home page</br>
+       <input type="radio" name="Q8" value="b">Content page</br></br>
+       Q9.CPU stands for?</br>
+       <input type="radio" name="Q9" value="a">Central Progressive Unit</br>
+       <input type="radio" name="Q9" value="b">Central Processing Unit</br></br>
+       Q10.RAM stands for?</br>
+       <input type="radio" name="Q10" value="a">Random Access Memory</br>
+       <input type="radio" name="Q10" value="b">Remember All Memory</br></br>
+       <input type="button" value="Submit" onclick="check()">
+   </form>
+</body>
+<script>
+   var name = prompt("Enter Your Name");
+   function check() {
+       var Q1 = document.myform.Q1.value;
+       var Q2 = document.myform.Q2.value;
+       var Q3 = document.myform.Q3.value;
+       var Q4 = document.myform.Q4.value;
+       var Q5 = document.myform.Q5.value;
+       var Q6 = document.myform.Q6.value;
+       var Q7 = document.myform.Q7.value;
+       var Q8 = document.myform.Q8.value;
+       var Q9 = document.myform.Q9.value;
+       var Q10 = document.myform.Q10.value;
+       var count = 0;
+       if (Q1 == "a") {
+           count++;
+       }
+       if (Q2 == "b") {
+           count++;
+       }
+       if (Q3 == "a") {
+           count++;
+       }
+       if (Q4 == "a") {
+           count++;
+       }
+       if (Q5 == "a") {
+           count++;
+       }
+       if (Q6 == "b") {
+           count++;
+       }
+       if (Q7 == "a") {
+           count++;
+       }
+       if (Q8 == "a") {
+           count++;
+       }
+       if (Q9 == "b") {
+           count++;
+       }
+       if (Q10 == "a") {
+           count++;
+       } -->

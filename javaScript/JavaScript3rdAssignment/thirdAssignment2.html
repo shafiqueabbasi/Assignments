@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Third Assignment</title>
+</head>
+<body>
+    <br/><br/><br/>
+    <div style="text-align:center;">
+
+        <h1>Quiz Result</h1>
+        <div> Name : <span id="Name"></span></div>
+
+        <form name="myform">
+            <p>Q1.Who has been appointed as the new chairman of Central Board of Indirect taxes and Customs (CBIC)?</p><br/>
+            <input type="radio" name="Q1" value="a">MahenderSingh</input><br/>
+            <input type="radio" name="Q1" value="b">S Ramesh</input>
+
+            <br/><br/><br/>
+            <p>Q2.Who has been appointed as the acting Chairman of the Union Public Service Commission (UPSC)?</p><br/>
+            <input type="radio" name="Q2" value="a">ArvindSaxena</input><br/>
+            <input type="radio" name="Q2" value="b">SudhaJain</input>
+            
+            <br/><br/><br/>
+            <p>Q3.Pappu Karki, the popular Kumaoni folk singer has passed away. He was native of which state?</p><br/>
+            <input type="radio" name="Q3" value="a">HimachalPradesh </input><br/>
+            <input type="radio" name="Q3" value="b">Uttarakhand</input>
+
+            <br/><br/><br/>
+            <p>Q4.India’s first-ever national police museum will establish in which city</p><br/>
+            <input type="radio" name="Q4" value="a">Chennai </input><br/>
+            <input type="radio" name="Q4" value="b">Delhi </input>
+
+            <br/><br/><br/>
+            <p>Q5.The Central Vigilance Commission (CVC) is in news for appointing Sharad Kumar as new Vigilance Commissioner. As per which committee’s recommendations, the CVC was set up?</p><br/>
+            <input type="radio" name="Q5" value="a">KVChowdarycommiittee</input><br/>
+            <input type="radio" name="Q5" value="b">K Santhanam commiittee</input> 
+
+            <p>Q6.Which one of the following is the programming language?</p></br>
+            <input type="radio" name="Q6" value="a">HTML</br>
+            <input type="radio" name="Q6" value="b">HTTP</br></br>
+
+            <p>Q7.Which short cut key is used for copt text?</br>
+            <input type="radio" name="Q7" value="a">ctrl + v</br>
+            <input type="radio" name="Q7" value="b">ctrl + c</br></br>
+
+            <p>Q8.How many funtion keys in a Keyboard?</p></br>
+            <input type="radio" name="Q8" value="a">12</br>
+            <input type="radio" name="Q8" value="b">14</br></br>
+
+            <p>Q9.The main page of a web site is known as?</p></br>
+            <input type="radio" name="Q9" value="a">Home page</br>
+            <input type="radio" name="Q9" value="b">Content page</br></br>
+
+            <p>Q10.CPU stands for?</p></br>
+            <input type="radio" name="Q10" value="a">Central Progressive Unit</br>
+            <input type="radio" name="Q10" value="b">Central Processing Unit</br></br>
+
+            <br/><br/><br/>
+
+            <button type="button" onclick="mycheck()">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+  var person = prompt("Please enter your name", "");
+  if (person != '') {
+    document.getElementById("Name").innerHTML = person;
+  }
+
+  function mycheck(){
+
+    var Q1 = document.myform.Q1.value;
+    var Q2 = document.myform.Q2.value;
+    var Q3 = document.myform.Q3.value;
+    var Q4 = document.myform.Q4.value;
+    var Q5 = document.myform.Q5.value;
+    var Q6 = document.myform.Q6.value;
+    var Q7 = document.myform.Q7.value;
+    var Q8 = document.myform.Q8.value;
+    var Q9 = document.myform.Q9.value;
+    var Q10 = document.myform.Q10.value;
+    
+    var totalScore = 0;
+
+      if(Q1 == "b"){
+         totalScore++
+      }
+      if(Q2 == "a"){
+         totalScore++
+      }
+      if(Q3 == "b"){
+          totalScore++
+      }
+      if(Q4 == "a"){
+          totalScore++
+      }
+      if(Q5 == "a"){
+          totalScore++
+      }
+      if(Q6 == "b"){
+         totalScore++
+      }
+      if(Q7 == "a"){
+         totalScore++
+      }
+      if(Q8 == "b"){
+          totalScore++
+      }
+      if(Q9 == "a"){
+          totalScore++
+      }
+      if(Q10 == "a"){
+          totalScore++
+      }
+      alert('your total score ' + totalScore);
+  }
+
+</script>
+</html>
+    
+ 
