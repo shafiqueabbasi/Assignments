@@ -1,0 +1,119 @@
+.col-1 {width: 8.33vw;}
+.col-2 {width: 16.66vw;}
+.col-3 {width: 25vw;}
+.col-4 {width: 33.33vw;}
+.col-5 {width: 41.66vw;}
+.col-6 {width: 50vw;}
+.col-7 {width: 58.33vw;}
+.col-8 {width: 66.66vw;}
+.col-9 {width: 75vw;}
+.col-10 {width: 83.33vw;}
+.col-11 {width: 91.66vw;}
+.col-12 {width: 100vw;}
+
+body{
+  margin: 0vw;
+  padding: 0vw;
+  overflow: hidden;
+}
+
+.row{
+  margin: 0vw;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .heading1{
+    font-size: 3vw;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .head2{
+    font-size: 1.7vw;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: -0.8vw;
+    padding-bottom: 3vw;
+
+  }
+  .backImage{
+    background-image: url("resBgImg.png");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .texTCentre{
+    text-align: center;
+  }
+  .btn_text{
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 700;
+  }
+  .btn_style{
+    padding: 1.3vw;
+    width: 11vw;
+    background-color: #23414c;
+    /* background-image: linear-gradient(to right, #fda085 51%, #f6d365 100%); */
+    border: none;
+    border-radius: 0.5vw;
+    box-shadow: 0px 4px 8.9vw rgba(0, 0 ,0 , 0.20);
+  }
+  .btn_style :focus{
+    padding: 1.3vw;
+    width: 11vw;
+    background-color: black;
+    /* background-image: linear-gradient(to right, #fda085 51%, #f6d365 100%); */
+    border: none;
+    border-radius: 0.5vw;
+    box-shadow: 0px 4px 8.9vw rgba(0, 0 ,0 , 0.20);
+  }
+  .btn_style:hover{
+    padding: 1.3vw;
+    width: 11vw;
+    background-color: #e73f57;
+    /* background-image: linear-gradient(to right, #fda085 51%, #f6d365 100%); */
+    border: none;
+    border-radius: 0.5vw;
+    box-shadow: 0px 4px 8.9vw rgba(0, 0 ,0 , 0.20);
+    cursor: pointer;
+  }
+
+  /* animation */
+  div {
+    width: 100vw;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    transform: translateX(-0%) translateY(-0%);
+}
+
+h1 {
+    font-size: 4.3em;
+    font-weight: 700;
+    color: #7e2ea0;
+    text-align: center;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+
+
