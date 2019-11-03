@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>api</title>
+    <head></head>
+        <style>
+            #pera{
+                /* background-color: brown; */
+                font-size: 1vw;
+                color: burlywood;
+            }
+        </style>
+        <script>
+            async function getData () {
+                var res = await fetch('https://jsonplaceholder.typicode.com/posts');
+                var data = await res.json();
+                console.log('data',data);
+    
+                for (var i = 0; i < data.length; i++){
+                    console.log('loop data', data[i].title);
+
+                    var p = document.createElement('p')
+                        p.innerHTML += data[i].title;
+                        p.setAttribute('id', 'pera')
+                        output.appendChild(p)
+                }
+            }
+            getData();
+            
+        </script>
+    <body>
+            
+
+        <div id="output">
+
+        </div>
+                
+    </body>
+    
+    
+</html>

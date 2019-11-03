@@ -1,0 +1,72 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    margin: 0vw;
+    padding: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    background-color: red;
+    flex-direction: column;
+}
+.header{
+    background-color: aquamarine;
+
+    flex: 1;
+    display: flex;
+}
+.body{
+    background-color: blue;
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.header > button{
+    background-color: crimson;
+    flex: 1;
+    margin: 2vw;
+    /* border-radius: 1vmax;
+    border: none; */
+}
+.header > button > a{
+    text-decoration: none;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    color: wheat;
+}
+.body > h1{
+    color: wheat;
+    text-align: center;
+}
+.footer{
+    flex: 1;
+    background-color: whitesmoke;
+}
+body > div{
+    flex: 1;
+    display: flex;
+    background-color: tomato;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+div .hed2{
+    flex: 1;
+    background-color: tomato;
+    /* flex-direction: column; */
+    
+}
+div .hed{
+    flex: 1;
+    background-color: palegreen;
+    /* flex-direction: column; */
+    
+}
