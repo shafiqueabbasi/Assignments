@@ -43,9 +43,35 @@ body{
     font-weight: bold;
     color: wheat;
 }
-
+.hed2 > h1{
+    color: wheat;
+    text-align: center;
+}
 .footer{
     flex: 1;
     background-color: whitesmoke;
 }
-
+.main .body .hed1{
+    flex: 1;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.main .body .hed2{
+    flex: 3;
+    /* display: flex; */
+    background-color: tomato;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.main .body .hed3{
+    flex: 1;
+    /* display: flex; */
+    background-color: black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
