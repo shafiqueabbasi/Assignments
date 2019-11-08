@@ -1,0 +1,19 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    margin: 0vw;
+    padding: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    overflow-x: hidden
+}
+.main{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
