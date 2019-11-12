@@ -8,12 +8,16 @@ body{
     flex-wrap: wrap;
     /* overflow: scroll; */
     overflow-x: hidden;
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ) 
-    ;
+    background-image: url("../../images/BgExpertizo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9
     
 }
 .main{
@@ -23,12 +27,17 @@ body{
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: aqua;
-    background-image: url("../../images/BgExpertizo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* background-color: aqua; */
+    color: #fff;
+    padding: 15px 0px;
+    
     text-align: center;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ) 
+    ;
     
 }
 .nav_hed{
@@ -36,7 +45,6 @@ body{
     flex: 1;
     flex-direction: column;
     flex-wrap: wrap;
-    /* background-color: yellow; */
 }
 .nav_hed1{
     display: flex;
@@ -47,7 +55,7 @@ body{
 }
 .nav_hed2{
     display: flex;
-    flex: 2;
+    flex: 3;
     flex-direction: column;
     flex-wrap: wrap;
     /* background-color: yellow; */
@@ -135,8 +143,18 @@ body{
 }
 .bodChild{
     position: absolute;
-    
+    /* linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ) 
+    ; */
 }
 .bodChild1{
     position: relative;
+    /* background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ) 
+    ; */
 }
