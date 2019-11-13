@@ -143,11 +143,7 @@ body{
 }
 .bodChild{
     position: absolute;
-    /* linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ) 
-    ; */
+    padding: 0vmax 20vmax 0vmax 20vmax;font-family: 'Varela Round', sans-serif; color: #fff;"
 }
 .bodChild1{
     position: relative;
