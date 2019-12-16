@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sale</title>
+    <link rel="stylesheet" href="salesForm.css">
+</head>
+<body>
+    <div class="main">
+        <div class="div1">
+            <!-- <div class="header_left"> -->
+                <!-- <button>Bara beta</button> -->
+                <!-- <button>Chota beta</button> -->
+            <!-- </div> -->
+            <!-- <div class="header_right"></div> -->
+        </div>
+        <div class="formdiv">
+            <p class="heading">Post Your Ad</p>
+            <p>select category</p>
+        <select name="Mobiles" id="Category">
+            <option value="Mobiles">Mobiles</option>
+            <option value="House">House</option>
+            <option value="Pets">Pets</option>
+            <option value="Laptops">Laptops</option>
+        </select>
+        <p>Enter your location</p>
+        <select name="Karachi" id="Location">
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+        </select>
+        <p>Brand Name</p>
+        <Input type="text" placeholder="Enter Brand Name" id="Brand"></Input>
+        
+        <p>Contact Number</p>
+        <input type="Number" placeholder="Enter number" id="Contact">
+
+        <p>Description Of your ad</p>
+        <input type="text" placeholder="Add Description" id="Description">
+
+        <p>Enter Price</p>
+        <input type="number" placeholder="Enter amount in Dollars" id="Price">
+
+        <p>Enter Image</p>
+        <input type="file">
+<br>
+        <button onclick="showdata()">Post Add</button>
+
+        </div>
+        <div class="div3"></div>
+     </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAXFga3zIYZU7uLdbHzeKjlXl4KCoHGkms",
+    authDomain: "olx-website-758f9.firebaseapp.com",
+    databaseURL: "https://olx-website-758f9.firebaseio.com",
+    projectId: "olx-website-758f9",
+    storageBucket: "olx-website-758f9.appspot.com",
+    messagingSenderId: "911810563360",
+    appId: "1:911810563360:web:47dfe20f3ec383a19b9b45",
+    measurementId: "G-V32DV1XSR9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="salesForm.js"></script>
+</html>

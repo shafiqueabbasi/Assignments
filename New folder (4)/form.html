@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+</head>
+
+<body>
+    <div class="maindevn">
+        <div class="divn1"></div>
+        <div class="divn2">
+            <div class="formdiv1">
+                <h3>Sign In</h3><br />
+                <form action="">
+                    <label for="fname">Email:</label>
+                    <input type="email" id="l-email" name="firstname" placeholder="Your email">
+
+                    <label for="lname">Password:</label>
+                    <input type="password" id="l-pass" name="lastname" placeholder="Your password">
+
+                    <button class="subBtn" type="button" value="Submit" onClick="loginFunc()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="divn3"></div>
+    </div>
+    <div class="maindevn">
+        <div class="divn1"></div>
+        <div class="divn2">
+            <div class="formdiv1">
+                <h3>Sign Up</h3><br />
+                <form action="">
+                    <label for="fname">Email:</label>
+                    <input type="email" id="s-email" placeholder="Your email" />
+                    <br />
+                    <label for="lname">Password:</label>
+                    <input type="password" id="s-pass" placeholder="Your password" />
+
+                    <button class="subBtn" type="button" value="Submit" onclick="signUpFunc()">Submit</button>
+
+                    <button onclick="saveUser()">Check button</button>
+                </form>
+            </div>
+        </div>
+        <div class="divn3"></div>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAXFga3zIYZU7uLdbHzeKjlXl4KCoHGkms",
+    authDomain: "olx-website-758f9.firebaseapp.com",
+    databaseURL: "https://olx-website-758f9.firebaseio.com",
+    projectId: "olx-website-758f9",
+    storageBucket: "olx-website-758f9.appspot.com",
+    messagingSenderId: "911810563360",
+    appId: "1:911810563360:web:47dfe20f3ec383a19b9b45",
+    measurementId: "G-V32DV1XSR9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+
+</html>

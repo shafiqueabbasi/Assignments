@@ -1,0 +1,87 @@
+
+l.PNG
+Image
+
+m.PNG
+Image
+
+Post by Asad Akber
+Asad Akber
+Created Oct 18Oct 18
+Ai Assignment
+
+Ai.PNG
+Image
+
+text.PNG
+Image
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label>signUp</label>
+    <br>
+    <br>
+    <input id="s-email" type="email" placeholder="Email">
+    <br>
+    <br>
+    <input id="s-pass" type="password" placeholder="Password">
+    <br>
+    <br>
+    <button onclick="signUpFunc()">signUp</button>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+
+    <label>login</label>
+    <br>
+    <br>
+    <input id="l-email" type="email" placeholder="Email">
+    <br>
+    <br>
+    <input id="l-pass" type="password" placeholder="Password">
+    <br>
+    <br>
+    <button onclick="loginFunc()">login</button>
+    <button onclick="getUserData()">test db</button>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBLvA7TKnGyhOd3OmwIgN2w_v17SrdDtHM",
+    authDomain: "fir-test-d64f7.firebaseapp.com",
+    databaseURL: "https://fir-test-d64f7.firebaseio.com",
+    projectId: "fir-test-d64f7",
+    storageBucket: "fir-test-d64f7.appspot.com",
+    messagingSenderId: "821945275372",
+    appId: "1:821945275372:web:1fef479a2e630a1edce6c9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+
+
+
+</html>

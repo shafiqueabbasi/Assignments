@@ -1,0 +1,49 @@
+.main{
+    /* background-color: lightcoral; */
+    height: 100vh ;
+    width: 100wv;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.div1{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+}
+.formdiv{
+    background-color: white;
+    flex: 4;
+}
+.div3{
+    /* background-color: mediumblue; */
+    flex: 1;
+}
+/* .header_left{ */
+    /* background-color: green; */
+    /* flex: 1; */
+    /* justify-content: space-evenly; */
+/* } */
+/* .header_right{ */
+    /* background-color: gold; */
+    /* flex: 1; */
+    
+/* } */
+/* .header_left button { */
+    /* padding: 10px; */
+    /* border: 2px 2px 2px ; */
+    /* border-radius: 10px; */
+    /* height:45px ; */
+    /* width:90px ; */
+
+/* } */
+.heading{
+
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+.ph{
+    width: 210px;
+    height: 25px;
+}
