@@ -1,4 +1,6 @@
 db = firebase.firestore();
+var storageRef = firebase.storage().ref();
+console.log(firebase);
 
 function showdata(){
     var category = document.getElementById('Category').value;
@@ -7,6 +9,7 @@ function showdata(){
     var contact = document.getElementById('Contact').value;
     var description = document.getElementById('Description').value;
     var price = document.getElementById('Price').value;
+    var file = document.getElementById('fileID').files[0];
 
     console.log('Category' ,category);
     console.log('Location', location);
@@ -14,7 +17,11 @@ function showdata(){
     console.log('Contact', contact);
     console.log('Description', description);
     console.log('Price', price);
+    console.log('file' , file.name);
 
+    storageRef.child(`image/${file.name}`).put(file).then(()=>{
+        console.log('image saved !!')
+    } )
 
     var obj = {
         category,
@@ -54,19 +61,21 @@ async function getData(){
 // olxcard.js
 
 
-createCard = async () => {
-    var ads = [];
-    var res = await db.collection('ads').get();
+// createCard = async () => {
+//     var ads = [];
+//     var res = await db.collection('ads').get();
 
-    res.forEach((doc)=> {
-        ads.push(doc.data());
-    });
+//     res.forEach((doc)=> {
+//         ads.push(doc.data());
+//     });
 
-    for(i = 0 , i < ads.length; i++){
-        console.log('ads[]:', ads[i]);
-    }
+//     for(i = 0 , i < ads.length; i++){
+//         console.log('ads[]:', ads[i]);
+
+//         var main = document.getElementById('mainChild1')
+//     }
 
 
-}
+// }
 
 
