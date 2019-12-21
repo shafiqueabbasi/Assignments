@@ -7,6 +7,7 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
     background-color: aqua;
@@ -64,9 +65,9 @@ body{
     background: url(../Images/olxBanner.jpg); 
     background-repeat: no-repeat;
     width: 100vmax;
-    height: 33vh;
+    height: 252px;
     background-size: cover;
-    background-position: center;
+    background-position: 50%;
 }
 .bod{
     flex: 1;
@@ -140,3 +141,10 @@ body{
     height: auto;
     background-color: lightcoral;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .searchBar {
+        display: none;
+    }
+  }

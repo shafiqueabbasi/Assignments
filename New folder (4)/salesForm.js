@@ -22,6 +22,9 @@ function showdata(){
     storageRef.child(`image/${file.name}`).put(file).then(()=>{
         console.log('image saved !!')
     } )
+    storageRef.child(`image/${file.name}`).put(file).then((URL)=>{
+        console.log('image saved !!')
+    } )
 
     var obj = {
         category,
@@ -30,6 +33,7 @@ function showdata(){
         contact,
         description,
         price,
+        URL,
     }
 
     var arr = ['category', 'location', 'brand', 'contact', 'description', 'price'];
@@ -61,21 +65,5 @@ async function getData(){
 // olxcard.js
 
 
-// createCard = async () => {
-//     var ads = [];
-//     var res = await db.collection('ads').get();
-
-//     res.forEach((doc)=> {
-//         ads.push(doc.data());
-//     });
-
-//     for(i = 0 , i < ads.length; i++){
-//         console.log('ads[]:', ads[i]);
-
-//         var main = document.getElementById('mainChild1')
-//     }
-
-
-// }
 
 
