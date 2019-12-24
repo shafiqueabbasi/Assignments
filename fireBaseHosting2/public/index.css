@@ -1,23 +1,23 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
 .main{
     flex: 1;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100vh;
+    /* flex-wrap: wrap; */
     background-color: aqua;
 }
 .header{
-    flex: 0.7;
+    flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    height: auto;
+    /* width: 100vw; */
+    /* height: auto; */
     background-color: rgba(247, 248, 249, 0.795);
 }
 
@@ -39,6 +39,7 @@ body{
     height: auto;
     background-color: rgb(14, 8, 1); */
 }
+
 .iconsProfile{
     flex: 3;
     display: flex;
@@ -48,7 +49,7 @@ body{
     background-color: rgb(162, 0, 255); */
 }
 .miniHeader{
-    flex: 0.3;
+    flex: 1;
     display: flex;
     flex-direction: row;
     /* width: 100vw; */
@@ -64,7 +65,7 @@ body{
 .banImg{
     background: url(../Images/olxBanner.jpg); 
     background-repeat: no-repeat;
-    width: 100vmax;
+    width: 100%;
     height: 252px;
     background-size: cover;
     background-position: 50%;
@@ -73,73 +74,74 @@ body{
     flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
-    background-color: lightgray;
+    flex-wrap: wrap;
+    /* width: 100vw;
+    height: auto; */
+    /* background-color: lightgray; */
 }
 .footAds{
     flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     background-color: rgb(150, 101, 37);
 }
 .footer{
     flex: 1.5;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     background-color: rgb(235, 238, 239);
 }
 .miniFooter{
     flex: 0.2;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     background-color: rgb(36, 25, 11);
 }
 .bodChild1{
     flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    /* width: 400px;
+    height: auto; */
     background-color: lightblue;
 }
 .bodChild2{
     flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    /* width: 400px;
+    height: auto; */
     background-color: lightcoral;
 }
 .bodChild3{
     flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    /* width: 400px;
+    height: auto; */
     background-color: black;
 }
 .bodChild4{
     flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    /* width: 400px;
+    height: auto; */
     background-color: lightpink;
 }
 .card1{
-    flex: 1;
+    /* flex: 1; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100%;
     height: auto;
-    background-color: lightcoral;
+    /* background-color: lightcoral;  */
 }
 
 
@@ -147,4 +149,61 @@ body{
     .searchBar {
         display: none;
     }
+  }
+
+  /* width: 82px;
+  font-size: 16px;
+  border: none;
+  color: #002f34;
+  margin-bottom: 2px */
+
+  .input-dov {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: calc(8em + 8.8vw);
+    border: 2px solid black;
+    margin: 7%;
+    background-color: white;
+    padding: 1.5%;
+  }
+  
+  /* .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 30px;
+    text-align: center;
+  } */
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+  }
+
+
+  .input-dov1 {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: calc(8em + 16vw);
+    margin: 3.3% 3% 3% 15%;
+    padding: 1.5%;
+  }
+  
+  .icon1 {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 30px;
+    text-align: center;
+    padding: 3.5% 1.5% 3.5% 1.5%;
+  }
+  
+  .input-field1 {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #d9d9d9;
+    padding: 4.1% 1.5% 4.1% 1.5%;
   }
