@@ -2,84 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 
     <title>OLX</title>
 </head>
 <body>
     <div class="main">
-            <div class="header">
-                <div class="logo">
-                    <img src="../Images/olxLogoIcon.png" height="50vw" width="50vw">
-                </div>
-                <div class="searchBar">
-                    
-                    <form action="/action_page.php" >
-                        <div class="input-dov">
-                            <img class="" src="../Images/locationIconImage.png" style="width: 30px;height: 30px;margin-top: 1%;"></img>
-                          <select class="input-field" name="cars">
-                            <option value="Pakistan">Pakistan</option>
-                            <option value="England">USA</option>
-                            <option value="Paris">Turky</option>
-                            <option value="Dubai">China</option>
-                          </select>
-                        </div>
-                      </form>
-                      <form action="/action_page.php" >
-                        <div class="input-dov1">
-                            <input class="input-field1" type="text" placeholder="Find Cars, Mobile Phones and more..." name="usrnm">
-                            <i class="fa fa-search icon1"></i>
-                          </div>
-                      </form>
-                </div>
+        <div class="header">
+            <div class="logo">
+                <img src="../Images/olxLogoIcon.png" height="50vw" width="50vw">
+            </div>
+
+            <div class="searchBar">
+                <form action="/action_page.php" >
+                    <div class="input-dov">
+                        <img class="" src="../Images/locationIconImage.png" style="width: 30px;height: 30px;margin-top: 1%;"></img>
+                        <select class="input-field" name="cars">
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="England">USA</option>
+                        <option value="Paris">Turky</option>
+                        <option value="Dubai">China</option>
+                        </select>
+                    </div>
+                </form>
+
+                <form action="/action_page.php" >
+                    <div class="input-dov1">
+                        <input class="input-field1" type="text" placeholder="Find Cars, Mobile Phones and more..." name="usrnm">
+                        <i class="fa fa-search icon1"></i>
+                    </div>
+                </form>
+            </div>
                 
-                <div class="iconsProfile"></div>
-            </div>
-            <div class="miniHeader">
-                <div class="">
-                    ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+            <div class="iconsProfile">
+                <i class='far fa-comment-alt' alt="chat" style='font-size:24px; margin: 1.2em;'></i>
+                <i class='far fa-bell' style='font-size:24px;margin: 1.2em 1.2em 1.2em 0em;'></i>
+
+                <div style="background-color: #2a65ea; height: 3em; width: 7em; margin: 1em 0em 1em 0em;">
+                    <i class="fa fa-camera" style="font-size:24px; margin: 0.5em 0.2em 0.5em 0.5em; color: white;">SELL</i>
                 </div>
             </div>
-            <div class="banner">
-                <div class="banImg"></div>
+        </div>
+
+        <div class="miniHeader">
+            <div class="minLeftSpc"></div>
+
+            <div class="minCent">
+                <nav> 
+                    <ul>
+                        <li><a href="http://krl-website.herokuapp.com/" target="_blank">KRL Creatives </a></li>
+                        <li><a href="http://expertizo.pk/" target="_blank">Expertizo </a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="bod">
-                
-                <div class="bodChild1">
-                    <div class="card1">
-                        ssssssssssss
+
+            <div class="minRi8Spc"></div> 
+        </div>
+
+        <div class="banner">
+            <div class="banImg"></div>
+        </div>
+
+        <div class="row">
+            <div class="productHead">
+                <span class="productHedng">Fresh recommendations</span>
+            </div>
+        </div>
+
+        <div class="bod">
+            <div class="bodChild1">
+                <div class="card1">
+                    <label>
+                        <span>FEATURED</span>
+                    </label>
+                    <i class="far fa-heart dilIcon"></i>
+                    <img class="cardImg" src="../Images/watch.webp">
+                </div>
+
+                <div class="devLeftColr">
+                    <span class="prodctPrice">Rs 1,500</span class="prodctPrice"><br>
+                    <span class="prodctDetail">True worth watch</span class="prodctDetail"><br><br>
+                    <span class="prodctCity">Karachi</span>
+                    <span class="prodctDate">29-Dec</span>
+                </div>
+            </div>
+
+            <div class="bodChild2">
+                <div class="card1">
+                    <div class="childCards">
+                        <label>
+                            <span>FEATURED</span>
+                        </label>
+                        <i class="far fa-heart dilIcon"></i>
+                        <img class="cardImg" src="../Images/bangla.webp">
                     </div>
                 </div>
-                <div class="bodChild2">
-                    <div class="card1">
-                        ssssssssssss
-                    </div>
-                </div>
-                <div class="bodChild3">
-                    <div class="card1">
-                        ssssssssssss
-                    </div>
-                </div>
-                <div class="bodChild4">
-                    <div class="card1">
-                        ssssssssssss
-                    </div>
+
+                <div class="devLeftColr">
+                    <span class="prodctPrice">Rs 12,900,000</span class="prodctPrice"><br>
+                    <span class="prodctDetail">3Bds - 5 Ba - 350 Square Yards</span class="prodctDetail"><br><br>
+                    <span class="prodctCity">Lahore</span>
+                    <span class="prodctDate">29-Dec</span>
                 </div>
             </div>
-            <div class="footAds">
-                <h1>Footer Ads</h1>
+
+            <div class="bodChild3">
+                <div class="card1">
+                    <label>
+                        <span>FEATURED</span>
+                    </label>
+                    <i class="far fa-heart dilIcon"></i>
+                    <img class="cardImg" src="../Images/car.webp">
+                </div>
+
+                <div class="devLeftColr">
+                    <span class="prodctPrice">Rs 267,000</span class="prodctPrice"><br>
+                    <span class="prodctDetail">2018 Suzuki Cultus</span class="prodctDetail"><br><br>
+                    <span class="prodctCity">Islamabad</span>
+                    <span class="prodctDate">29-Dec</span>
+                </div>
             </div>
-            <div class="footer">
-                <h1>Footer</h1>
+
+            <div class="bodChild4">
+                <div class="card1">
+                    <label>
+                        <span>FEATURED</span>
+                    </label>
+                    <i class="far fa-heart dilIcon"></i>
+                    <img class="cardImg" src="../Images/bike.webp">
+                </div>
+
+                <div class="devLeftColr">
+                    <span class="prodctPrice">Rs 11,600</span><br>
+                    <span class="prodctDetail">HONDA 125 ON INSTALLMENTS</span><br><br>
+                    <span class="prodctCity">Punjab</span>
+                    <span class="prodctDate">29-Dec</span>
+                </div>
             </div>
-            <div class="miniFooter">
-                <p>Footer</p>
+        </div>
+
+        <div class="footAds">
+            <div class="adsImg">
+                <img src="../Images/adsImg.png" />
             </div>
+            <div class="adsHedng">
+                <span>TRY THE OLX APP</span>
+                <p>Buy, sell and find just about anything using the app on your mobile.</p>
+            </div>
+
+            <div class="adsHr"></div>
+
+            <div class="adsbtns">
+                <span>GET YOUR APP TODAY</span>
+                <p>
+                    <a href="">
+                        <img class="adsButton1" src="../Images/appStore.png" />
+                    </a>
+                    <a href="">
+                        <img class="adsButton2" src="../Images/playStore.png" />
+                    </a>
+                </p>
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footerChild1">
+                <span>OPULAR CATEGORIES</span><br>
+                <a href="">Cars</a><br>
+                <a href="">Flats for rent</a><br>
+                <a href="">Jobs</a><br>
+                <a href="">Mobile Phones</a><br>
+            </div>
+            <div class="footerChild2">
+                <span>TRENDING SEARCHES</span><br>
+                <a href="">Cars</a><br>
+                <a href="">Flats for rent</a><br>
+                <a href="">Jobs</a><br>
+                <a href="">Mobile Phones</a><br>
+            </div>
+            <div class="footerChild3">
+                <span>ABOUT US</span><br>
+                <a href="">Cars</a><br>
+                <a href="">Flats for rent</a><br>
+                <a href="">Jobs</a><br>
+                <a href="">Mobile Phones</a><br>
+            </div>
+            <div class="footerChild4">
+                <span>OLX</span><br>
+                <a href="">Cars</a><br>
+                <a href="">Flats for rent</a><br>
+                <a href="">Jobs</a><br>
+                <a href="">Mobile Phones</a><br>
+            </div>
+            <div class="footerChild5"></div>
+        </div>
+
+        <div class="miniFooter">
+            <p>Footer</p>
+        </div>
     </div>
-    
 </body>
 </html>

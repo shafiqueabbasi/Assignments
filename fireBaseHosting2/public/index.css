@@ -4,21 +4,29 @@ body{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+@-ms-viewport{
+    width: device-width;
+  }
+
 .main{
-    flex: 1;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    background-color: aqua;
+    /* background-color: aqua; */
 }
+
 .header{
-    flex: 1;
     display: flex;
     flex-direction: row;
-    /* width: 100vw; */
     /* height: auto; */
+    position: fixed;
+    width: 100%;
     background-color: rgba(247, 248, 249, 0.795);
+    z-index: 1;
+    /* box-shadow: 0 1px 4px 0 rgba(0,0,0,.1); */
 }
 
 .logo{
@@ -27,41 +35,71 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    /* width: 100%;
-    height: auto;
-    background-color: rgb(255, 145, 0); */
 }
+
 .searchBar{
     flex: 6;
     display: flex;
     flex-direction: row;
-    /* width: 100%;
-    height: auto;
-    background-color: rgb(14, 8, 1); */
 }
 
 .iconsProfile{
     flex: 3;
     display: flex;
     flex-direction: row;
-    /* width: 100%;
-    height: auto;
-    background-color: rgb(162, 0, 255); */
 }
+
 .miniHeader{
     flex: 1;
     display: flex;
     flex-direction: row;
-    /* width: 100vw; */
-    /* height: auto; */
+    margin-top: 5.6em;
     background-color: #ffffff;
 }
+
+.minLeftSpc{
+    flex: 0.2;
+    display: flex;
+}
+
+.minCent{
+    flex: 3.3;
+    display: flex;
+    padding: 0.5em 0em;
+}
+
+.minCent nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    justify-content: flex-end; 
+    margin: 0px; 
+    flex-wrap: wrap;
+}
+  
+  .minCent nav ul li a {
+   color: black;
+   text-decoration: none; 
+   margin: 5px 25px 5px 0px;
+    font-family: Arial;
+}
+  
+  .minCent nav ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+  .minRi8Spc{
+      flex: 0.2;
+      display: flex;
+}
+
 .banner{
     flex: 1;
     display: flex;
     flex-direction: row;
-    
 }
+
 .banImg{
     background: url(../Images/olxBanner.jpg); 
     background-repeat: no-repeat;
@@ -70,94 +108,227 @@ body{
     background-size: cover;
     background-position: 50%;
 }
+
+.productHead{
+    flex: 1;
+    display: flex;
+}
+
+.productHedng{
+    font-size: 24px;
+    font-family: Arial;
+    margin: 1% 0% 1% 11%;
+}
+
 .bod{
     flex: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 100vw;
-    height: auto; */
-    /* background-color: lightgray; */
+    justify-content: center;
 }
+
+.bodChild1{
+    /* flex: 1;
+    display: flex; */
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid black;
+    border: 1px solid #ccd5d6;
+    margin: 0em 1em;
+    width: 18em;
+    margin-bottom: 2em;
+    /* padding: 1em; */
+}
+
+.card1{
+    padding: 0.5em 0.5em 0em 0.5em;
+}
+.card1 label{
+    background-color: #f8dd3c;
+    color: black;
+    position: absolute;
+    padding: 0.1em 0.3em;
+}
+
+.card1 label span{
+    font-size: 10px;
+    font-family: arial;
+    font-weight: bold;
+    color: #002f34;
+}
+
+.dilIcon{
+    float: right !important;
+    position: absolute;
+    margin-left: 12.5em;
+    font-size: 19px;
+}
+
+.cardImg{
+    width: 100%;
+    height: 9em;
+}
+.devLeftColr{
+    border-left: 5px solid #f8dd3c;
+}
+
+.prodctPrice{
+    color: #002f34;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prodctDetail{
+    color: rgba(0,47,52,.64);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.prodctCity{
+    color: rgba(0,47,52,.64);
+    font-size: 10px;
+}
+
+.prodctDate{
+    color: rgba(0,47,52,.64);
+    font-size: 10px;
+    margin-left: 20em;
+}
+
+.bodChild2{
+    /* flex: 1;
+    display: flex; */
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #ccd5d6;
+    margin: 0em 1em;
+    width: 18em;
+    margin-bottom: 2em;
+    /* padding: 1em; */
+}
+
+.bodChild3{
+    /* flex: 1;
+    display: flex; */
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #ccd5d6;
+    margin: 0em 1em;
+    width: 18em;
+    margin-bottom: 2em;
+    /* padding: 1em; */
+}
+
+.bodChild4{
+    /* flex: 1;
+    display: flex; */
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #ccd5d6;
+    margin: 0em 1em;
+    width: 18em;
+    margin-bottom: 2em;
+    /* padding: 1em; */
+}
+
 .footAds{
     flex: 1;
     display: flex;
     flex-direction: row;
-    /* width: 100%;
-    height: auto; */
-    background-color: rgb(150, 101, 37);
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(0,47,52,.03);
 }
+
+.adsHedng{
+    width: 24em;
+    margin: 28px 0 16px;
+}
+.adsHedng span{
+    font-size: 34px;
+    font-weight: 700;
+    color: #2a65ea;
+}
+
+.adsHedng p{
+    font-size: 34px;
+    font-weight: 400;
+    color: #002f34;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.adsHr{
+    width: 2px;
+    margin: 2em;
+    background-color: rgba(0,47,52,.2);
+    border: 0 solid rgba(0,47,52,.2);
+    height: 136px;
+}
+
+
+.adsbtns{
+    width: 27em;
+    margin: 28px 0 16px;
+}
+
+.adsbtns span{
+    font-size: 14px;
+    font-weight: 700;
+    color: #002f34;
+}
+
+.adsButton1{
+    width: 9em;
+
+}
+
+.adsButton2{
+    width: 11em;
+    
+}
+
+.
+
 .footer{
-    flex: 1.5;
+    flex: 1;
     display: flex;
     flex-direction: row;
-    /* width: 100%;
-    height: auto; */
-    background-color: rgb(235, 238, 239);
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #ebeeef;
+    /* padding: 16px 0 32px; */
+    border-top: 1px solid rgba(0,47,52,.2);
 }
+
 .miniFooter{
     flex: 0.2;
     display: flex;
     flex-direction: row;
-    /* width: 100%;
-    height: auto; */
     background-color: rgb(36, 25, 11);
 }
-.bodChild1{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    /* width: 400px;
-    height: auto; */
-    background-color: lightblue;
-}
-.bodChild2{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    /* width: 400px;
-    height: auto; */
-    background-color: lightcoral;
-}
-.bodChild3{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    /* width: 400px;
-    height: auto; */
-    background-color: black;
-}
-.bodChild4{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    /* width: 400px;
-    height: auto; */
-    background-color: lightpink;
-}
-.card1{
-    /* flex: 1; */
-    display: flex;
-    /* flex-direction: row; */
-    width: 100%;
-    height: auto;
-    /* background-color: lightcoral;  */
-}
+
+
+
 
 
 @media only screen and (max-width: 600px) {
     .searchBar {
         display: none;
     }
-  }
-
-  /* width: 82px;
-  font-size: 16px;
-  border: none;
-  color: #002f34;
-  margin-bottom: 2px */
-
-  .input-dov {
+    .miniHeader {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5.2em;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+}
+  
+.input-dov {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     width: calc(8em + 8.8vw);
@@ -165,45 +336,38 @@ body{
     margin: 7%;
     background-color: white;
     padding: 1.5%;
-  }
-  
-  /* .icon {
-    padding: 10px;
-    background: dodgerblue;
-    color: white;
-    min-width: 30px;
-    text-align: center;
-  } */
-  
-  .input-field {
+}
+
+.input-field {
     width: 100%;
     padding: 10px;
     outline: none;
     border: none;
-  }
+}
 
-
-  .input-dov1 {
+.input-dov1 {
     display: -ms-flexbox; /* IE10 */
     display: flex;
-    width: calc(8em + 16vw);
-    margin: 3.3% 3% 3% 15%;
-    padding: 1.5%;
-  }
-  
-  .icon1 {
+    width: calc(8em + 35vw);
+    margin: 1.1em 0em 3% 3em;
+    /* padding: 0.8em; */
+}
+
+.icon1 {
     padding: 10px;
-    background: dodgerblue;
+    background: #2a65ea;
     color: white;
     min-width: 30px;
     text-align: center;
-    padding: 3.5% 1.5% 3.5% 1.5%;
-  }
-  
-  .input-field1 {
+    padding: 1em 1em 1.9em 1em;
+    height: 0.2em;
+}
+
+.input-field1 {
     width: 100%;
     padding: 10px;
     outline: none;
     border: 2px solid #d9d9d9;
-    padding: 4.1% 1.5% 4.1% 1.5%;
-  }
+    padding: 15.1px 5.5px 15.1px 5.5px;
+    height: 1.2em;
+}
