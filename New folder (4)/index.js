@@ -27,31 +27,24 @@ function signUpFunc(){
 
 
 function loginFunc() {
-    console.log("TCL: loginFunc -> loginFunc", "loginFunc");
+  console.log("TCL: loginFunc -> loginFunc", "loginFunc");
 
-    let lEmail = document.getElementById('l-email').value;
-    let lPass = document.getElementById('l-pass').value;
+  let lEmail = document.getElementById('l-email').value;
+  let lPass = document.getElementById('l-pass').value;
 
   firebase.auth().signInWithEmailAndPassword(lEmail, lPass)
-  .then((data) => {
-    console.log("TCL: loginFunc -> data", data.user.email)
-    alert("login succ with this email " + data.user.email)
+      .then((data) => {
+          console.log("TCL: loginFunc -> data", data.user.email)
+          alert("login succ with this email "+ data.user.email)
+      })
+      .catch(function (error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          alert(errorMessage)
+          // ...
+      });
 
-    var obj = {
-        email: data.user.email,
-        uid: data.user.uid
-    }
-
-    localStorage.setItem("user", JSON.stringify(obj))
-
-})
-.catch(function (error)
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    alert(errorMessage)
-    // ...
-  });
 
 }
 

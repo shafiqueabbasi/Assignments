@@ -54,6 +54,7 @@ body{
     margin: 5px 10px 0;
     /* background: #1ddced; */
     border-radius: 10px;
+    border-top-right-radius: 0px;
     color: #fff;
     font-size: 20px;
 }
