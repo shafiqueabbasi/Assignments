@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myP">setTimeout and clearTimeout Methods in JavaScript (Hindi). setTimeout and clearTimeout Methods in JavaScript (Hindi)
+        setTimeout and clearTimeout Methods in JavaScript (Hindi). setTimeout and clearTimeout Methods in JavaScript (Hindi)
+    </p>
+    <button type="utton" id="myBtn">Click here</button>
+    <script>
+
+        // function changeCss() {
+        //     document.getElementById('myP').style = 'color: blue; font-size: 34px'
+        // }
+        // setTimeout(changeCss, 5000);
+
+        // setTimeout(function changeCss() {
+        //     document.getElementById('myP').style = 'color: blue; font-size: 34px'
+        // },2000)
+
+        // changeCss = () => {
+        //     document.getElementById('myP').style = 'color: blue; font-size: 34px'
+        // }
+        // setTimeout(changeCss, 2000)
+        
+        var timeOut = setTimeout(changeCss = () => {
+            document.getElementById('myP').style = 'color: blue; font-size: 34px'
+        }, 2000)
+
+        function  clrTime() {
+            clearTimeout(timeOut)
+        }
+        document.getElementById('myBtn').addEventListener('click', clrTime)
+
+    </script>
+</body>
+</html>

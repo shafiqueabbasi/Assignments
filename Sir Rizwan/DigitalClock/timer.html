@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Timer Start</h5>
+    <h5 id="timeStart">Timer Start</h5>
+    <!-- <button onclick="timerStart()">Start</button> -->
+
+    <script>
+        var startValue = 0;
+        var timerInterval = setInterval(timerStart, 1000)
+        // setInterval(function(){ alert("Hello"); }, 3000);
+
+        function timerStart(){
+            startValue = startValue +1;
+            document.getElementById("timeStart").innerHTML = startValue;
+            
+            if(startValue == 10){
+                clearInterval(timerInterval(alert('Time up'),))
+            }
+
+        }
+    </script>
+
+</body>
+</html>
